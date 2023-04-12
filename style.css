@@ -23,15 +23,16 @@ body {
     padding: 25px;
 }
 
-#list {
+.list {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 10px;
 }
 
-#list-item {
+.list-item {
     margin-bottom: 10px;
+    border: solid;
 }
 
 .current-city {
