@@ -50,34 +50,9 @@ body {
     display: flex;
 }
 
-#day1 {
+.day-container {
     border: solid;
     width: 15%;
     padding: 10px;
     margin: 10px;
 }
-#day2 {
-    border: solid;
-    width: 15%;
-    padding: 10px;
-    margin: 10px;
-}
-#day3 {
-    border: solid;
-    width: 15%;
-    padding: 10px;
-    margin: 10px;
-}
-#day4 {
-    border: solid;
-    width: 15%;
-    padding: 10px;
-    margin: 10px;
-}
-#day5 {
-    border: solid;
-    width: 15%;
-    padding: 10px;
-    margin: 10px;
-}
-
