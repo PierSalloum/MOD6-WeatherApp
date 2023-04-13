@@ -1,5 +1,7 @@
 body {
     background-color: white;
+    text-align: center;
+    align-items: center;
 }
 
 .banner {
@@ -31,6 +33,7 @@ body {
 }
 
 .list-item {
+    display: flex;
     margin-bottom: 10px;
     border: solid;
 }
