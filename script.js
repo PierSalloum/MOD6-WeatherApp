@@ -1,7 +1,7 @@
 
 const getLocation = async () => {
     const inputCity = document.getElementById("input-city").value
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inputCity}&limit=1&appid=2e57c835085c11b3a7f95dbb976b3da7`)
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${inputCity}&limit=1&appid=2e57c835085c11b3a7f95dbb976b3da7`)
     const data = await response.json()
     getWeather(data[0].lon, data[0].lat)
     let lastSearch = document.querySelector(".list")
@@ -17,7 +17,7 @@ const getLocation = async () => {
 
 
 async function handleHistory (event) {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${event.target.innerHTML}&limit=1&appid=2e57c835085c11b3a7f95dbb976b3da7`)
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${event.target.innerHTML}&limit=1&appid=2e57c835085c11b3a7f95dbb976b3da7`)
     const data = await response.json()
     getWeather(data[0].lon, data[0].lat)
     document.querySelector(".forecast-container").innerHTML = '';
